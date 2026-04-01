@@ -512,7 +512,7 @@
       text-align: center;
       padding: 80px 40px;
     }
-    .reserve-inner { max-width: 480px; margin: 0 auto; }
+    .reserve-inner { max-width: 720px; margin: 0 auto; }
     .reserve-inner h2 {
       font-size: 2rem;
       font-weight: 600;
@@ -903,10 +903,9 @@
 
     <!-- RESERVE -->
     <section class="reserve-section" id="reserve" aria-label="Rezervácia">
-      <div class="reserve-inner reveal">
+      <div class="reserve-inner">
         <h2>rezervujte si stôl</h2>
-        <p>Zabezpečte si miesto pre nezabudnuteľný zážitok. Špeciálne udalosti a súkromné akcie vybavíme na mieru.</p>
-        <a href="tel:+421900000000" class="btn">+421 900 000 000</a>
+        <iframe src="https://book.gostio.eu/book/saxunovic/test1" width="100%" height="700" frameborder="0" style="border:none;" title="Rezervácia"></iframe>
       </div>
     </section>
   </main>
@@ -953,7 +952,7 @@
   <!-- Sticky mobile CTA -->
   <div class="mobile-cta" aria-label="Rýchle akcie">
     <a href="tel:+421900000000" class="cta-call">Zavolať</a>
-    <a href="#reserve" class="cta-reserve">Rezervácia</a>
+    <a href="#reserve" class="cta-reserve">Rezervovať</a>
   </div>
 
   <script>
@@ -1004,7 +1003,5 @@
 
   </script>
 
-  <iframe id="gostio-widget" src="https://book.gostio.eu/book/saxunovic/test1?mode=compact" width="400" frameborder="0" allowtransparency="true" style="border:none;position:fixed;bottom:16px;right:16px;z-index:9999;height:500px;background:transparent;pointer-events:none;" title="Rezervácia"></iframe>
-  <script>window.addEventListener("message",function(e){var f=document.getElementById("gostio-widget");if(!f)return;if(e.data&&e.data.type==="gostio:resize"){f.style.height=(e.data.height+8)+"px";f.style.pointerEvents="auto"}if(e.data&&e.data.type==="gostio:close"){f.style.display="none"}});</script>
 </body>
 </html>
