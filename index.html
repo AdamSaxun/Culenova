@@ -134,16 +134,18 @@
 
     .btn-nav {
       display: inline-block;
-      padding: 8px 20px;
+      padding: 9px 24px;
       font-size: 0.85rem;
       font-weight: 600;
-      letter-spacing: 0.04em;
-      background: var(--green);
+      letter-spacing: 0.05em;
+      background: var(--dark);
       color: var(--white);
-      border-radius: 3px;
-      transition: background 0.2s ease;
+      border-radius: 100px;
+      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+      box-shadow: 0 2px 8px rgba(38,33,32,0.15);
     }
-    .btn-nav:hover { background: var(--green-dark); }
+    .btn-nav:hover { background: #3a3332; transform: translateY(-1px); box-shadow: 0 4px 14px rgba(38,33,32,0.22); }
+    .btn-nav:active { transform: translateY(0) scale(0.97); }
     .btn-nav::after { display: none !important; }
     .btn-nav:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 
@@ -205,11 +207,11 @@
       justify-content: center;
     }
     .hero-tabs a {
-      font-size: 0.88rem;
+      font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.06em;
       text-transform: lowercase;
-      color: var(--gray);
+      color: var(--dark);
       padding: 6px 0;
       border-bottom: 1.5px solid transparent;
       transition: color 0.2s ease, border-color 0.2s ease;
@@ -222,12 +224,12 @@
       position: relative;
       z-index: 1;
       margin-top: 20px;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
       font-weight: 500;
       font-style: italic;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--gray);
+      color: var(--dark);
     }
 
 
@@ -276,7 +278,7 @@
       display: flex;
       gap: 20px;
     }
-    .intro-links a, .section-links a {
+    .intro-links a {
       font-size: 0.88rem;
       font-weight: 500;
       letter-spacing: 0.03em;
@@ -287,8 +289,8 @@
       text-underline-offset: 3px;
       transition: color 0.2s ease;
     }
-    .intro-links a:hover, .section-links a:hover,
-    .intro-links a:focus-visible, .section-links a:focus-visible {
+    .intro-links a:hover,
+    .intro-links a:focus-visible {
       color: var(--green-dark);
     }
 
@@ -354,10 +356,6 @@
       line-height: 1.65;
       color: var(--gray);
       margin-bottom: 20px;
-    }
-    .section-links {
-      display: flex;
-      gap: 18px;
     }
 
     /* Unified tinted sections — warm alternation */
@@ -572,17 +570,18 @@
     }
     .btn {
       display: inline-block;
-      padding: 14px 32px;
+      padding: 16px 40px;
       font-size: 0.95rem;
       font-weight: 600;
-      letter-spacing: 0.03em;
-      background: var(--green);
+      letter-spacing: 0.05em;
+      background: var(--dark);
       color: var(--white);
-      border-radius: 3px;
-      transition: background 0.2s ease, transform 0.15s ease;
+      border-radius: 100px;
+      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+      box-shadow: 0 2px 10px rgba(38,33,32,0.15);
     }
-    .btn:hover { background: var(--green-dark); }
-    .btn:active { transform: scale(0.98); }
+    .btn:hover { background: #3a3332; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(38,33,32,0.2); }
+    .btn:active { transform: translateY(0) scale(0.97); }
     .btn:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 
     /* === FOOTER === */
@@ -638,15 +637,15 @@
     .footer-newsletter input::placeholder { color: rgba(255,255,255,0.2); }
     .footer-newsletter input:focus { outline: none; border-color: var(--green); }
     .footer-newsletter button {
-      padding: 10px 18px;
+      padding: 10px 20px;
       font-size: 0.88rem;
       font-weight: 600;
-      background: var(--green);
-      color: var(--white);
-      border-radius: 3px;
-      transition: background 0.2s ease;
+      background: var(--white);
+      color: var(--dark);
+      border-radius: 100px;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
-    .footer-newsletter button:hover { background: var(--green-dark); }
+    .footer-newsletter button:hover { background: #e8e5df; transform: translateY(-1px); }
     .footer-newsletter button:focus-visible { outline: 2px solid var(--white); outline-offset: 2px; }
     .footer-bottom {
       max-width: 980px;
@@ -739,14 +738,14 @@
         padding: 12px;
         font-size: 0.9rem;
         font-weight: 600;
-        border-radius: 3px;
+        border-radius: 100px;
       }
       .mobile-cta .cta-call {
-        border: 1.5px solid var(--green);
-        color: var(--green-dark);
+        border: 1.5px solid var(--dark);
+        color: var(--dark);
       }
       .mobile-cta .cta-reserve {
-        background: var(--green);
+        background: var(--dark);
         color: var(--white);
       }
     }
@@ -817,10 +816,6 @@
           <h2>raňajky</h2>
           <p class="subtitle">od 8:00</p>
           <p>Naše raňajky sú pripravované s láskou z čerstvých lokálnych surovín. Domáce pečivo, smoothie bowly, vajíčka na všetky spôsoby a voňavá káva — ideálny začiatok vášho dňa.</p>
-          <div class="section-links">
-            <a href="#">celé menu</a>
-            <a href="#">alergény</a>
-          </div>
         </div>
         <img class="menu-img" src="images-opt/WhatsApp%20Image%202026-04-01%20at%2011.27.30.webp" alt="Bruschetta taniere pripravené na servírovanie" width="800" height="600" loading="lazy" decoding="async">
       </div>
@@ -833,10 +828,6 @@
           <h2>obedy</h2>
           <p class="subtitle">od 11:30</p>
           <p>Sezónne inšpirované obedové menu s dôrazom na čerstvosť a chuť. Polievky, šaláty, sendviče aj teplé jedlá — vždy niečo nové na objavovanie.</p>
-          <div class="section-links">
-            <a href="#">denné menu</a>
-            <a href="#">stále menu</a>
-          </div>
         </div>
         <img class="menu-img" src="images-opt/WhatsApp%20Image%202026-04-01%20at%2011.27.30%204.webp" alt="Grilované mäso a guľky na grile" width="800" height="600" loading="lazy" decoding="async">
       </div>
@@ -849,10 +840,6 @@
           <h2>dezerty</h2>
           <p class="subtitle">celý deň</p>
           <p>Sladké pokušenia od našich cukrárov. Domáce torty, cheesecaky, tartaletky a sezónne špeciality — pretože každý deň si zaslúži sladkú bodku.</p>
-          <div class="section-links">
-            <a href="#">dezertné menu</a>
-            <a href="#">objednať tortu</a>
-          </div>
         </div>
         <img class="menu-img" src="images-opt/WhatsApp%20Image%202026-04-01%20at%2011.27.314%2034.webp" alt="Karamelový dezert s praženými mandľami v pohári" width="800" height="600" loading="lazy" decoding="async">
       </div>
@@ -865,10 +852,6 @@
           <h2>víno</h2>
           <p class="subtitle">podávané celý deň</p>
           <p>Starostlivo vybraná vínna karta s dôrazom na slovenské a európske vína. Od ľahkých bielych po plné červené — ku každému jedlu ten správny sprievod.</p>
-          <div class="section-links">
-            <a href="#">vínna karta</a>
-            <a href="#">degustácie</a>
-          </div>
         </div>
         <img class="menu-img" src="images-opt/WhatsApp%20Image%202026-04-01%20at%2011.27.30%206.webp" alt="Hlavné jedlo s mäsom, rukolou a omáčkou" width="800" height="600" loading="lazy" decoding="async">
       </div>
@@ -881,10 +864,6 @@
           <h2>koktaily</h2>
           <p class="subtitle">podávané celý deň</p>
           <p>Autorské koktaily od nášho barmana — klasiky aj sezónne kreácie. Osviežujúce, kreatívne a vždy s príbehom. Skúste náš signature Čulenova spritz.</p>
-          <div class="section-links">
-            <a href="#">koktailové menu</a>
-            <a href="#">nealko</a>
-          </div>
         </div>
         <img class="menu-img" src="images-opt/WhatsApp%20Image%202026-04-01%20at%2011.27.30%205.webp" alt="Kuchár polieva omáčku na elegantne servírovaný tanier" width="800" height="600" loading="lazy" decoding="async">
       </div>
